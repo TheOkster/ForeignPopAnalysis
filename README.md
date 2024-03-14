@@ -1,4 +1,4 @@
-Not a particularly complex project,
+Not a particularly complex project.
 
 Just some work trying to find the population in a given metro that lives in a census block or equivalent with over 3,000 people/km
 This was done in Canada, Singapore, and Europe using their census data, GIS, and Geofeather.
