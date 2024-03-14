@@ -37,8 +37,8 @@ def closest_matches(threshold: int, value: str, metro_list: list):
         item = unidecode.unidecode(str(item))
         score = fuzz.token_set_ratio(value, item)
         if threshold < score:
-            matches.append(item, score)
-    return [name for name in sorted(matches, key=lambda element: element[1])]
+            matches.append((item, score))
+    return [name for name in sorted(matches, key=lambda element: element[1], reverse=True)]
 
 
 def get_tract_info(data: pd.DataFrame, data_raw: pd.DataFrame, urban_areas: pd.DataFrame,
